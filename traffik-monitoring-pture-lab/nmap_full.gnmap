@@ -1,4 +1,0 @@
-# Nmap 7.95 scan initiated Tue Nov 11 12:39:41 2025 as: /usr/lib/nmap/nmap -sS -p- -A -T4 -oA nmap_full localhost
-Host: 127.0.0.1 (localhost)	Status: Up
-Host: 127.0.0.1 (localhost)	Ports: 3000/open/tcp//ppp?///, 34383/open/tcp//http//Golang net|http server/	Ignored State: closed (65533)	OS: Linux 5.0 - 6.2	Seq Index: 262	IP ID Seq: All zeros
-# Nmap done at Tue Nov 11 12:40:10 2025 -- 1 IP address (1 host up) scanned in 28.72 seconds
