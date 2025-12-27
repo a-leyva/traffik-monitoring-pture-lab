@@ -1,4 +1,4 @@
-# 🧩 Lab 1 — Network Traffic Analysis with Wireshark
+# 🧩 Network Traffic Analysis with Wireshark
 
 ### **Objective**
 Capture and analyze web application traffic on a local Juice Shop instance to identify sensitive information transmitted in plaintext and demonstrate packet-level visibility using Wireshark.
