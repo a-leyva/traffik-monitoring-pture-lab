@@ -1,0 +1,9 @@
+# Nmap 7.95 scan initiated Tue Nov 11 12:40:32 2025 as: /usr/lib/nmap/nmap --script vuln -oN nmap_vuln_checks.txt localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000011s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE
+3000/tcp open  ppp
+
+# Nmap done at Tue Nov 11 12:40:43 2025 -- 1 IP address (1 host up) scanned in 10.34 seconds

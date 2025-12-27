@@ -1,0 +1,142 @@
+# Nmap 7.95 scan initiated Tue Nov 11 12:39:41 2025 as: /usr/lib/nmap/nmap -sS -p- -A -T4 -oA nmap_full localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00012s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 65533 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+3000/tcp  open  ppp?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Access-Control-Allow-Origin: *
+|     X-Content-Type-Options: nosniff
+|     X-Frame-Options: SAMEORIGIN
+|     Feature-Policy: payment 'self'
+|     X-Recruiting: /#/jobs
+|     Accept-Ranges: bytes
+|     Cache-Control: public, max-age=0
+|     Last-Modified: Mon, 10 Nov 2025 22:45:25 GMT
+|     ETag: W/"124fa-19a6ff20daa"
+|     Content-Type: text/html; charset=UTF-8
+|     Content-Length: 75002
+|     Vary: Accept-Encoding
+|     Date: Tue, 11 Nov 2025 12:39:53 GMT
+|     Connection: close
+|     <!--
+|     Copyright (c) 2014-2025 Bjoern Kimminich & the OWASP Juice Shop contributors.
+|     SPDX-License-Identifier: MIT
+|     <!doctype html>
+|     <html lang="en" data-beasties-container>
+|     <head>
+|     <meta charset="utf-8">
+|     <title>OWASP Juice Shop</title>
+|     <meta name="description" content="Probably the most modern and sophisticated insecure web application">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <link id="favicon" rel="icon"
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 204 No Content
+|     Access-Control-Allow-Origin: *
+|     Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE
+|     Vary: Access-Control-Request-Headers
+|     Content-Length: 0
+|     Date: Tue, 11 Nov 2025 12:39:53 GMT
+|     Connection: close
+|   Help, NCP: 
+|     HTTP/1.1 400 Bad Request
+|_    Connection: close
+34383/tcp open  http    Golang net/http server
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 Not Found
+|     Date: Tue, 11 Nov 2025 12:40:03 GMT
+|     Content-Length: 19
+|     Content-Type: text/plain; charset=utf-8
+|     404: Page Not Found
+|   GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Date: Tue, 11 Nov 2025 12:39:48 GMT
+|     Content-Length: 19
+|     Content-Type: text/plain; charset=utf-8
+|     404: Page Not Found
+|   OfficeScan: 
+|     HTTP/1.1 400 Bad Request: missing required Host header
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|_    Request: missing required Host header
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3000-TCP:V=7.95%I=7%D=11/11%Time=69132E99%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,101B9,"HTTP/1\.1\x20200\x20OK\r\nAccess-Control-Allow-Origin:
+SF:\x20\*\r\nX-Content-Type-Options:\x20nosniff\r\nX-Frame-Options:\x20SAM
+SF:EORIGIN\r\nFeature-Policy:\x20payment\x20'self'\r\nX-Recruiting:\x20/#/
+SF:jobs\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20public,\x20max-age
+SF:=0\r\nLast-Modified:\x20Mon,\x2010\x20Nov\x202025\x2022:45:25\x20GMT\r\
+SF:nETag:\x20W/\"124fa-19a6ff20daa\"\r\nContent-Type:\x20text/html;\x20cha
+SF:rset=UTF-8\r\nContent-Length:\x2075002\r\nVary:\x20Accept-Encoding\r\nD
+SF:ate:\x20Tue,\x2011\x20Nov\x202025\x2012:39:53\x20GMT\r\nConnection:\x20
+SF:close\r\n\r\n<!--\n\x20\x20~\x20Copyright\x20\(c\)\x202014-2025\x20Bjoe
+SF:rn\x20Kimminich\x20&\x20the\x20OWASP\x20Juice\x20Shop\x20contributors\.
+SF:\n\x20\x20~\x20SPDX-License-Identifier:\x20MIT\n\x20\x20-->\n\n<!doctyp
+SF:e\x20html>\n<html\x20lang=\"en\"\x20data-beasties-container>\n<head>\n\
+SF:x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20<title>OWASP\x20Juice\x20Sh
+SF:op</title>\n\x20\x20<meta\x20name=\"description\"\x20content=\"Probably
+SF:\x20the\x20most\x20modern\x20and\x20sophisticated\x20insecure\x20web\x2
+SF:0application\">\n\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=
+SF:device-width,\x20initial-scale=1\">\n\x20\x20<link\x20id=\"favicon\"\x2
+SF:0rel=\"icon\"\x20")%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n")%r(NCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,EA,"HTTP/1\.1\x20204
+SF:\x20No\x20Content\r\nAccess-Control-Allow-Origin:\x20\*\r\nAccess-Contr
+SF:ol-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nVary:\x20Access-
+SF:Control-Request-Headers\r\nContent-Length:\x200\r\nDate:\x20Tue,\x2011\
+SF:x20Nov\x202025\x2012:39:53\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(R
+SF:TSPRequest,EA,"HTTP/1\.1\x20204\x20No\x20Content\r\nAccess-Control-Allo
+SF:w-Origin:\x20\*\r\nAccess-Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,
+SF:POST,DELETE\r\nVary:\x20Access-Control-Request-Headers\r\nContent-Lengt
+SF:h:\x200\r\nDate:\x20Tue,\x2011\x20Nov\x202025\x2012:39:53\x20GMT\r\nCon
+SF:nection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port34383-TCP:V=7.95%I=7%D=11/11%Time=69132E94%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(GetRequest,8F,"HTTP/1\.0\x20404\x20Not\x20Found\r\nDate
+SF::\x20Tue,\x2011\x20Nov\x202025\x2012:39:48\x20GMT\r\nContent-Length:\x2
+SF:019\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n\r\n404:\x20Pag
+SF:e\x20Not\x20Found")%r(HTTPOptions,8F,"HTTP/1\.0\x20404\x20Not\x20Found\
+SF:r\nDate:\x20Tue,\x2011\x20Nov\x202025\x2012:39:48\x20GMT\r\nContent-Len
+SF:gth:\x2019\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n\r\n404:
+SF:\x20Page\x20Not\x20Found")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x2
+SF:0Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection
+SF::\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x
+SF:20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nCo
+SF:nnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSessionReq,67,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20ch
+SF:arset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Fo
+SF:urOhFourRequest,8F,"HTTP/1\.0\x20404\x20Not\x20Found\r\nDate:\x20Tue,\x
+SF:2011\x20Nov\x202025\x2012:40:03\x20GMT\r\nContent-Length:\x2019\r\nCont
+SF:ent-Type:\x20text/plain;\x20charset=utf-8\r\n\r\n404:\x20Page\x20Not\x2
+SF:0Found")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-
+SF:Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n40
+SF:0\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20c
+SF:lose\r\n\r\n400\x20Bad\x20Request")%r(Socks5,67,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnec
+SF:tion:\x20close\r\n\r\n400\x20Bad\x20Request")%r(OfficeScan,A3,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20header\r\
+SF:nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\
+SF:r\n\r\n400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20header"
+SF:);
+Device type: general purpose
+Running: Linux 5.X|6.X
+OS CPE: cpe:/o:linux:linux_kernel:5 cpe:/o:linux:linux_kernel:6
+OS details: Linux 5.0 - 6.2
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 12:40:10 2025 -- 1 IP address (1 host up) scanned in 28.72 seconds

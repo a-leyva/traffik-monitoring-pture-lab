@@ -1,0 +1,41 @@
+# Nmap 7.95 scan initiated Tue Nov 11 12:37:22 2025 as: /usr/lib/nmap/nmap --privileged -sS -sV --top-ports 100 -oN nmap_quick.txt localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000040s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+3000/tcp open  ppp?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3000-TCP:V=7.95%I=7%D=11/11%Time=69132E0D%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,126B3,"HTTP/1\.1\x20200\x20OK\r\nAccess-Control-Allow-Origin:
+SF:\x20\*\r\nX-Content-Type-Options:\x20nosniff\r\nX-Frame-Options:\x20SAM
+SF:EORIGIN\r\nFeature-Policy:\x20payment\x20'self'\r\nX-Recruiting:\x20/#/
+SF:jobs\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20public,\x20max-age
+SF:=0\r\nLast-Modified:\x20Mon,\x2010\x20Nov\x202025\x2022:45:25\x20GMT\r\
+SF:nETag:\x20W/\"124fa-19a6ff20daa\"\r\nContent-Type:\x20text/html;\x20cha
+SF:rset=UTF-8\r\nContent-Length:\x2075002\r\nVary:\x20Accept-Encoding\r\nD
+SF:ate:\x20Tue,\x2011\x20Nov\x202025\x2012:37:33\x20GMT\r\nConnection:\x20
+SF:close\r\n\r\n<!--\n\x20\x20~\x20Copyright\x20\(c\)\x202014-2025\x20Bjoe
+SF:rn\x20Kimminich\x20&\x20the\x20OWASP\x20Juice\x20Shop\x20contributors\.
+SF:\n\x20\x20~\x20SPDX-License-Identifier:\x20MIT\n\x20\x20-->\n\n<!doctyp
+SF:e\x20html>\n<html\x20lang=\"en\"\x20data-beasties-container>\n<head>\n\
+SF:x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20<title>OWASP\x20Juice\x20Sh
+SF:op</title>\n\x20\x20<meta\x20name=\"description\"\x20content=\"Probably
+SF:\x20the\x20most\x20modern\x20and\x20sophisticated\x20insecure\x20web\x2
+SF:0application\">\n\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=
+SF:device-width,\x20initial-scale=1\">\n\x20\x20<link\x20id=\"favicon\"\x2
+SF:0rel=\"icon\"\x20")%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n")%r(NCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,EA,"HTTP/1\.1\x20204
+SF:\x20No\x20Content\r\nAccess-Control-Allow-Origin:\x20\*\r\nAccess-Contr
+SF:ol-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nVary:\x20Access-
+SF:Control-Request-Headers\r\nContent-Length:\x200\r\nDate:\x20Tue,\x2011\
+SF:x20Nov\x202025\x2012:37:33\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(R
+SF:TSPRequest,EA,"HTTP/1\.1\x20204\x20No\x20Content\r\nAccess-Control-Allo
+SF:w-Origin:\x20\*\r\nAccess-Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,
+SF:POST,DELETE\r\nVary:\x20Access-Control-Request-Headers\r\nContent-Lengt
+SF:h:\x200\r\nDate:\x20Tue,\x2011\x20Nov\x202025\x2012:37:33\x20GMT\r\nCon
+SF:nection:\x20close\r\n\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 12:37:33 2025 -- 1 IP address (1 host up) scanned in 11.60 seconds
