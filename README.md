@@ -69,6 +69,3 @@ Capture and analyze web application traffic on a local Juice Shop instance to id
 - Encryption (TLS) is essential for confidentiality and integrity.
 
 ---
-
-### **Next Step**
-Proceed to **Lab 2 — Nmap & Vulnerability Scanning**, where we’ll discover open ports, enumerate services, and detect potential vulnerabilities for reporting.
